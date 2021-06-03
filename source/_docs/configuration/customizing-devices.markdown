@@ -129,3 +129,11 @@ Alternatively, you can reload via service call. Navigate to Developer Tools > Se
 <div class='note warning'>
 New customize information will be applied the next time the state of the entity gets updated.
 </div>
+
+### Example of modifying Binary Device Class
+
+The [Binary Sensor](/integrations/binary_sensor/) page describes how different classes display the "TRUE" or "FALSE" value of a binary sensor, and changing these is very useful to better understand something like a door contact sensor.  By default, when a binary sensor is closed, the value is "Off" and you might prefer that to be represented as "Closed".
+
+To do this, go to Configuration on the left menu, Customization at the very bottom, then select your entity.  An example might be a friendly name of "Front Door Contact" and have an entity ID of binary_sensor.smartthings_multiv4_34112301_ias_zone.
+
+The second option is Device Class.  Change this to one of the options in the link above.  For example, if you change it to "Door", then the binary sensor being closed is shown as "Closed" instead of "Off".
